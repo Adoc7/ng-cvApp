@@ -1,0 +1,17 @@
+
+<div class="toto" [style.backgroundColor]="color">
+    color
+</div>
+
+<input 
+    #inputColor 
+    (change)="changeBgColor(inputColor)" 
+    type="text" 
+    class="form-control"
+    placeholder="Ecrire ici le nom de votre couleur (en anglais) et valider en appuyant sur Entrée"
+>
+
+
+<!-- <button (click)="loggerMesData()">Log Data</button> -->
+<br>
+<button class="btn btn-primary" (click)="goToCv()">Voir les CV</button>

@@ -1,0 +1,8 @@
+span#image1{
+    display:block;
+    float:left; 
+    width:10px;
+    height: 10px;
+    background-image: url("../../../assets/images/woman_0.jpg") no-repeat !important;
+    background-color: #cccccc;
+}

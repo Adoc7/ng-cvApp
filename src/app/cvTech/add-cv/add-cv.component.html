@@ -1,0 +1,36 @@
+<div *ngIf="errorMessage" class="alert alert-danger">
+    {{errorMessage}}
+</div>
+
+<form #formulaire="ngForm">
+    <label for="name">Name</label>
+    <input required class="form-control" id="name" type="text" ngModel name="name">
+
+    <label for="firstname">Firstname</label>
+    <input required class="form-control" id="firstname" type="text" ngModel name="firstname">
+
+    <label for="job">Job</label>
+    <input required class="form-control" id="job" type="text" ngModel name="job">
+
+    <label for="age">Age</label>
+    <input required min="0" max="170" class="form-control" id="age" type="number" ngModel name="age">
+
+    <label for="cin">Cin</label>
+    <input required class="form-control" id="cin" type="number" ngModel name="cin">
+
+    <label for="path">Photo</label>
+<!--     <input class="form-control" id="path" type="text" ngModel name="path">
+ -->    
+    <select id="path" ngModel name="path" class="form-control">
+        <option value="">---- Choisissez votre photo ----</option>
+        <option value="woman_0.jpg">Portrait de femme</option>
+        <option value="woman_1.jpg">Portrait de femme 1 </option>
+        <option value="man_0.jpg">Portrait d'homme</option>
+        <option value="man_1.png">Portrait d'homme 1</option>
+        <option value="land_0.png">Paysage</option>
+        <option value="land_1.jpg">Paysage 1</option>
+        <option value="land_2.png">Paysage 2</option>
+    </select>
+
+    <button [disabled]="formulaire.invalid" class="btn btn-primary" (click)="addPersonne(formulaire)">Envoyer</button>
+</form>

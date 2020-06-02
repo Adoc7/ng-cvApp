@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "JulienDb": {
+    "host": "localhost",
+    "port": 3308,
+    "url": "",
+    "database": "anguforma",
+    "password": "coda",
+    "name": "JulienDb",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
